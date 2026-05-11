@@ -258,6 +258,28 @@
   .info-row:first-child { border-top: 1px solid var(--border); }
   .info-icon { font-size: 0.85rem; color: var(--muted2); width: 20px; flex-shrink: 0; }
 
+  /* VIDEO ABOUT */
+  .about-video-wrap {
+    margin-top: 1.8rem;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: #000;
+  }
+  .about-video-wrap video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+  }
+  .about-video-label {
+    font-size: 0.75rem;
+    color: var(--muted2);
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
   /* COMPETENCES */
   #competences { background: var(--bg); }
   .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
@@ -636,6 +658,14 @@
           <div class="info-row"><span class="info-icon">🚗</span><span>Permis B</span></div>
           <div class="info-row"><span class="info-icon">💼</span><span>Recherche alternance Admin. Systèmes & Réseaux</span></div>
         </div>
+        <!-- VIDEO DE PRÉSENTATION -->
+        <div class="about-video-wrap">
+          <video controls preload="metadata">
+            <source src="portfolio numérique.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+          </video>
+        </div>
+        <p class="about-video-label">▶ Vidéo de présentation — Portfolio numérique</p>
       </div>
     </div>
   </div>
